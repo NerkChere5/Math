@@ -1,0 +1,15 @@
+:host {
+    background: #141414;
+    box-sizing: border-box;
+    color: #fffd;
+    display: block;
+    padding: 30px;
+    user-select: none;
+    width: 100%;
+}
+
+
+.null {
+    display: inline-block;
+    width: 5px;
+}

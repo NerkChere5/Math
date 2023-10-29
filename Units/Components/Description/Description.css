@@ -1,0 +1,59 @@
+:host {
+    display: contents;
+}
+
+
+.root {
+    height: 90vh;
+}
+
+
+img {
+    height: 250px;
+    margin-top: 30px;
+}
+
+
+x-slider {
+    height: 100%;
+    user-select: none;
+}
+
+x-screen {
+    color: #fff;
+    font-family: 'Arial';
+    height: 100%;
+}
+
+x-popup {
+    color: #000;
+    z-index: 1;
+}
+
+
+[popup_link] {
+    cursor: pointer;
+    text-decoration: underline 1px solid #fff;
+}
+
+[popup_link]:hover {
+    color: #ddd;
+    text-decoration: underline 1px solid #ddd;
+}
+
+
+.formula {
+    height: 50px;
+    margin: 0;
+}
+
+
+.files_download {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  justify-items: center;
+}
+
+.icon_download {
+  height: 100px;
+}

@@ -1,0 +1,161 @@
+:host {
+    display: contents;
+    height: 100%;
+}
+
+
+.root {
+    height: 90vh;
+}
+
+
+x-slider {
+    height: 100%;
+    user-select: none;
+}
+
+x-screen {
+    color: #fff;
+    font-family: 'Arial';
+    height: 100%;
+}
+
+x-popup {
+    color: #000;
+    z-index: 1;
+}
+
+
+[popup_link] {
+    cursor: pointer;
+}
+
+[popup_link]:hover {
+    color: #ddd;
+}
+
+.denominator {
+    border-top: 1px solid #000;
+    display: inline;
+}
+
+.subscript {
+    display: grid;
+    font-style: italic;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+    width: 30px;
+}
+
+.subscript_x {
+    width: 90px;
+}
+
+.letter {
+    font-size: xx-large;
+    grid-row: 1 / -1;
+}
+
+.formula {
+    display: grid;
+    grid-auto-flow: column;
+    width: 400px;
+}
+
+.symbol {
+    font-size: xx-large;
+}
+
+.mark_true {
+    color: green;
+}
+
+.mark_error {
+    color: red;
+}
+
+.show_solve {
+    background: orange;
+    border: 2px solid orange;
+    color: #290e4e;
+}
+
+.show_solve:active {
+    border: 2px solid #704609;
+}
+
+input {
+    background: border-box;
+    border-radius: 10px;
+    border: 2px dashed #000;
+    color: #fff;
+    font: 22px 'Arial';
+    margin: 20px;
+    outline: none;
+    padding: 10px;
+}
+
+input:hover {
+    border: 2px dashed #fff;
+}
+
+input:focus {
+    border: 2px dashed #fff;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    font: 20px 'Arial';
+    font-weight: 600;
+    margin: 20px;
+    outline: none;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.check_btn {
+    background: border-box;
+    color: #faa;
+    text-decoration: underline #f56161c7;
+}
+
+.check_btn:hover {
+    text-decoration: underline #ddd;
+}
+
+.check_btn:active {
+    color: #edbad1e0;
+    text-decoration: underline #ddd;
+}
+
+.mark_true, .mark_error {
+    font-weight: 600;
+}
+
+.image_formula {
+    height: 25px;
+    pointer-events: none;
+}
+
+.image_formula_x {
+    height: 70px;
+    pointer-events: none;
+}
+
+.files_download {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, auto);
+    justify-items: center;
+}
+
+.icon_download {
+    height: 100px;
+}
+
+.conditions * {
+    font-size: 20px;
+    text-align: start;
+}
