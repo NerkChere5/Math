@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Font';
+  src: url('../../../Main/font.ttf');
+}
+
+
+* {
+    font-family: 'Font';
+    color: #fff;
+}
+
+:host {
+  display: contents;
+  height: 100%;
+}
+
+
+.root {
+  all: inherit;
+  display: grid;
+  grid-template: auto auto / auto;
+  justify-items: center;
+  overflow: auto;
+  text-align: center;
+}
+
+
+.content {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin: 15px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.head {
+  align-self: center;
+  display: block;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}

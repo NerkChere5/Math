@@ -1,0 +1,23 @@
+<x-menu>
+  <meta data-type='menu__logo' data-caption='Logo'>
+  
+  <meta data-caption='Главная' data-url='/'>
+  <meta data-caption='Новости' data-url='/new'>
+  
+  <slot data-caption='Товары'>
+    <slot data-type='menu__category' data-caption='Компьютеры'>
+      <meta data-caption='ПК' data-url='#'>
+      <meta data-caption='Ноутбуки' data-url='#'>
+    </slot>
+    
+    <slot data-type='menu__category' data-caption='Телефоны'>
+      <meta data-caption='Мобильные' data-url='#'>
+      <meta data-caption='Стационарные' data-url='#'>
+    </slot>
+  </slot>
+  
+  <slot data-type='menu__profile' data-caption='User'>
+    <meta data-caption='ПК' data-url='#'>
+    <meta data-caption='Ноутбуки' data-url='#'>
+  </slot>
+</x-menu>

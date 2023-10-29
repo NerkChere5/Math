@@ -1,0 +1,67 @@
+:host {
+  --animation_in_0_name: in_top;
+  --animation_in_1_name: in_bottom;
+  --animation_out_0_name: out_top;
+  --animation_out_1_name: out_bottom;
+}
+
+
+x_arrow:not(.__extends) {
+  justify-self: center;
+  border: var(--arrow_size) solid transparent;
+}
+
+x_arrow:nth-of-type(1) {
+  border-top: none;
+  border-bottom-color: var(--arrow_color);
+  align-self: start;
+}
+
+x_arrow:nth-of-type(2) {
+  border-top-color: var(--arrow_color);
+  border-bottom: none;
+  align-self: end;
+}
+
+
+
+
+@keyframes in_top {
+  from {
+    top: -100%;
+  }
+  
+  to {
+    top: 0;
+  }
+}
+
+@keyframes in_bottom {
+  from {
+    top: 100%;
+  }
+  
+  to {
+    top: 0;
+  }
+}
+
+@keyframes out_bottom {
+  from {
+    top: 0;
+  }
+  
+  to {
+    top: -100%;
+  }
+}
+
+@keyframes out_top {
+  from {
+    top: 0;
+  }
+  
+  to {
+    top: 100%;
+  }
+}

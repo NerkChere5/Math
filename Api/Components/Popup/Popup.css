@@ -1,0 +1,52 @@
+:host {
+    box-sizing: border-box;
+    display: contents;
+    height: 100%;
+    width: 100%;
+}
+
+
+.root {
+    all: inherit;
+
+    background: #0008;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    left: 0;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+}
+
+.root[visible='false'] {
+    display: none;
+}
+
+
+.button {
+    align-self: center;
+    background: seaGreen;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font: 16px 'Arial Black';
+    padding: 20px;
+    user-select: none;
+}
+
+.button:hover {
+    background: #3CB371;
+}
+
+.display {
+    align-self: stretch;
+    background: #eee;
+    border-radius: 20px;
+    display: block;
+    overflow: auto;
+    padding: 25px;
+    user-select: text;
+}
+
+
