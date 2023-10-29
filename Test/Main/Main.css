@@ -1,0 +1,28 @@
+@font-face {
+ font-family: 'Font';
+ src: url('../../Main/font.ttf');
+}
+
+
+* {
+    font-family: 'Font';
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: url('../../Media/background.jpg') center / cover no-repeat;
+    overflow-x: hidden;
+}
+
+x-menu {
+    color: #fffb;
+    --menu__item_color_hover: #fff;
+}
+
+
+x-footer {
+    margin-top: 30px;
+}
